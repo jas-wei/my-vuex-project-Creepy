@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "paintnook"
-  }
+  },
+  "targets": {
+    "paintnook": {
+      "hosting": {
+        "your-site-name": [
+          "your-firebase-project-id"
+        ],
+        "welcome": [
+          "welcome-fff1c"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
