@@ -4,10 +4,16 @@
     font-family: VT323;
 } */
 
+.creepy{
+    margin-top: 60px;
+}
+
 input {
+    font-size: 20px;
     margin: 10px;
     display: block;
     outline: none;
+    padding-top: 0;
 }
 
 [v-cloak]{ /* makes it so that html is not visible until browser is ready */
@@ -47,13 +53,14 @@ input {
 
 button{
     margin: 10px;
+    padding-top: 0;
 }
 
 *{
     background:#000;
     color:#fff;
     text-align:center;
-    font-family:"Trebuchet MS";
+    font-family: VT323, Helvetica, Arial, sans-serif;
     text-transform:uppercase;
     padding-top:2em;
     
@@ -61,8 +68,8 @@ button{
       to bottom,
       #000,
       #000 50%,
-      #303030 50%,
-      #2c0000
+      #1d1d1d 50%,
+      #110000
     );
     background-size: 100% 4px;
     animation: gradientMove 200ms ease infinite;
