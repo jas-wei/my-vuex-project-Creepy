@@ -16,6 +16,8 @@
 </template>
 
 <script>
+  import '@/styles/names.css';
+  
   export default {
       data() {
       return {
@@ -29,5 +31,5 @@
       }, 2000); // 2000 milliseconds = 2 seconds
     }
   }
-  import '@/styles/names.css';
+
 </script>

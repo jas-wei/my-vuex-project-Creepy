@@ -11,6 +11,7 @@
       <button @click="handleSubmit">Log in</button>
     </form>
   </div>
+  <router-view />
 </template>
 
 <script>
@@ -27,11 +28,13 @@ export default {
   },
   methods: {
     handleSubmit() {
-      this.$store.commit('setAnswer', this.answer);
-
-      if (this.password == this.answer){
+      this.$store.commit('setPassword', this.password);
+      console.log('password:' + this.password);
+      console.log(this.password == '677401')
+      if (this.password === '677401'){
+        this.message = '';
         this.$store.commit('setAuthenticated', true)
-        this.$router.push('/paintnook');
+        this.$router.push('/names');
       } else{
         this.message = 'Incorrect Information Entered:';
       }
